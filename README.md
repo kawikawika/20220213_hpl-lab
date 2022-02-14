@@ -25,7 +25,8 @@ N is the matrix size (# of equations):
 - 2X increase in problem size → up to 8X increase in run time
 - Memory usage in GiB is approximately 8*N<sup>2</sup>/10243
 - Each node has 256 GiB of memory but Slurm is configured to allow jobs to use ~80% of that
-- If you want to size a 2-node job to use approximately 70% of memory, then N = sqrt(0.7 * 2 * 256 * 10243/8) = 219325 (does it help for N to be a multiple of NB?)
+- If you want to size a 2-node (nnodes = 2) job to use approximately 70% (mem_perc = .70) of memory, then N = sqrt(mem_perc * nnodes * 256 * 10243/8) = 219325
+  - Does it help for N to be a multiple of NB?
 - Make sure N isn’t too small, since results of parameterization experiments for small N may not be the same as those for large N
 
 ```python
