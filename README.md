@@ -28,5 +28,16 @@ N is the matrix size (# of equations):
 - If you want to size a 2-node job to use approximately 70% of memory, then N = sqrt(0.7 * 2 * 256 * 10243/8) = 219325 (does it help for N to be a multiple of NB?)
 - Make sure N isn’t too small, since results of parameterization experiments for small N may not be the same as those for large N
 
-- [ ] Create a 
+```python
+  '''
+  funciton _ns() takes no arguments
+  Generate an array of Ns that satisify the requirements above
+  '''
+  def _ns():
+    ns_array = []
+    '''
+    # code that will determine which numbers to add to ns array
+    '''
+    return ns_array
+```
 
