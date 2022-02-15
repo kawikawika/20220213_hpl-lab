@@ -169,3 +169,5 @@ Using the slurm.bat file example provided above, create a batch file make the fo
 - When calling the ./xhpl, xhpl needs an HPL.dat file in the same directory so it knows what parameters to run
 1. #SBATCH -o {output_filename}\_sbatch.log
 2. ... | tee {output_filename}\_srun.out
+
+##
