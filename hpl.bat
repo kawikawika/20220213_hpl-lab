@@ -12,4 +12,4 @@ export OMP_NUM_THREADS=1
 export OMP_PLACES=cores
 export OMP_PROC_BIND=close
 
-srun -u -c $OMP_NUM_THREADS --distribution=block:block --cpu-bind=none ./place.sh ./xhpl | tee hpl.out
+python srun.py | tee hpl.out
