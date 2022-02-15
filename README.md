@@ -84,6 +84,11 @@ working_direcotry
 |- your_program.whatever
 |- xhpl
 ```
+
+## Prerequisites
+- This lab requires the following:
+  - python installed (>= version 2.6)
+  - [srun.py](src/srun.py) installed in working directory
 ## Determine HPL Parameters
 <details>
   <summary> Create a method that determines NB.</summary>
