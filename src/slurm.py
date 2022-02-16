@@ -26,6 +26,6 @@ if __name__ == "__main__":
         if "| tee" in line:
           srun_out = line.split(' ')[-1]
 
-    os.system("python srun.py")
+    os.system("python xhpl.py")
     os.system("touch {}".format(srun_out))
     os.system("touch {}".format(slurm_out))
